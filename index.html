@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMark</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Amatic+SC&family=Montserrat:wght@100&family=Pacifico&family=Poppins:wght@900&family=Roboto:ital@0;1&family=Source+Sans+3&display=swap" rel="stylesheet">
+ 
+     <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    
+</head>
+<body>
+<section class="container text-center py-3 my-3">
+    <div class="text-title-bg">
+        <h1 class="text-title">bookmarker</h1>
+        
+    </div>
+    <hr style="border-top-style: dashed;">
+    <div class="contain">
+        <h1 class="text-form  my-3"> <i class="fa-solid fa-bookmark"></i> Bookmark your <span style="color:#19d1f1">favorite sites</span> <i class="fa-solid fa-bookmark " style="color:#19d1f1"></i></h1>
+        <form class="text-start" >
+            <label for="SiteName"><i class="fa-solid fa-floppy-disk "></i> Site Name</label>
+            <input type="text" id="SiteName" class="form-control  my-3" placeholder="book mark name" />
+            <label for="SiteUrl" ><i class="fa-solid fa-link"></i>   Site URL</label>
+            <input type="url" id="SiteUrl"  name="SiteUrl" data-fv-string-length___min="6" data-fv-string-length___message="The name must be more than 6 characters long"   data-fv-not-empty___message="The username is required" class="form-control text-start  my-3" name="url" pattern="https://.*" placeholder="website url" required title="Requires https://" required/>
+        </form>
+        <button class="btn btn-danger mt-3 btn-moved" type="button" id="btn" >Submit</button>
+
+    </div>
+    <hr style="border-top-style: dashed;">
+
+    <div>
+        <table class="table mt-5">
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>Website Name</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="talbeRow">
+
+            </tbody>
+        </table>
+    </div>
+
+</section>
+
+<script src="js/first.js"></script>
+</body>
+</html>
